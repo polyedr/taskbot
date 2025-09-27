@@ -1,0 +1,7 @@
+type: python
+entrypoint: python bot.py
+env:
+  - name: BOT_MODE
+    value: webhook
+  - name: WEBHOOK_URL
+    value: taskbot-bots0002025.amvera.io/   # Здесь будет внешний домен, который выдаст Amvera после деплоя
