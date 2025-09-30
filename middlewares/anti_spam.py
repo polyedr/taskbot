@@ -51,7 +51,7 @@ class CooldownMiddleware(BaseMiddleware):
                     await event.answer(self.reply_text, show_alert=False)
                 except Exception:
                     pass
-            return  # не вызываем handler
+            return  # не вызывается handler
 
         self._last[uid] = now
         return await handler(event, data)

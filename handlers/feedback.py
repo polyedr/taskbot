@@ -225,7 +225,7 @@ async def feedback_send(cb: CallbackQuery, state: FSMContext, bot: Bot):
     admin_ids = parse_admin_ids(ADMINS)
 
     if not admin_ids:
-        # Если не настроены админы — тихо завершаем, сообщив пользователю об успехе
+        # Если не настроены админы, завершаем, сообщив пользователю об успехе
         pass
     elif not screenshots:
         for admin_id in admin_ids:

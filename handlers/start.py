@@ -11,5 +11,5 @@ router = Router()
 @router.message(Command("start"))
 async def cmd_start(message: Message, state: FSMContext):
     await state.clear()
-    # ... дальше твоя логика ...
+    # ... дальше некоторая логика ...
     await message.answer(START_TEXT, reply_markup=MAIN_MENU)

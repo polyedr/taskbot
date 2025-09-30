@@ -1,8 +1,6 @@
 # app/models/db.py
 from __future__ import annotations
 
-import os
-
 from sqlalchemy.ext.asyncio import (
     AsyncEngine,
     AsyncSession,
